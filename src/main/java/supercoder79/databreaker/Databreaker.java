@@ -15,5 +15,6 @@ public class Databreaker implements ModInitializer {
 		logger.warn("SUPERCODER79 IS COMPLETELY RESPONSIBLE FOR ANY DAMAGE CAUSED BY USING DATABREAKER IN A PRODUCTION ENVIRONMENT.");
 		logger.warn("THERE IS A GOOD CHANCE THAT YOUR GAME WILL BE PERFECT IF YOU LOAD UP A WORLD.");
 		logger.warn("PLEASE USE DATABREAKER IN A NON-DEVELOPMENT ENVIRONMENT.");
+		logger.info("^ For legal reasons this is a joke ~ Valoeghese");
 	}
 }

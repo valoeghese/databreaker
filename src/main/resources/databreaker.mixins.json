@@ -13,7 +13,6 @@
     "fix_log_spam.MixinLevelStorage"
   ],
   "client": [
-    "MixinBackupPromptScreen",
     "fix_log_spam.MixinLevelStorageClient"
   ],
   "injectors": {
