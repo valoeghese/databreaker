@@ -12,9 +12,13 @@ public class Databreaker implements ModInitializer {
 	
 	@Override
 	public void onInitialize() {
-		logger.warn("SUPERCODER79 IS COMPLETELY RESPONSIBLE FOR ANY DAMAGE CAUSED BY USING DATABREAKER IN A PRODUCTION ENVIRONMENT.");
-		logger.warn("THERE IS A GOOD CHANCE THAT YOUR GAME WILL BE PERFECT IF YOU LOAD UP A WORLD.");
-		logger.warn("PLEASE USE DATABREAKER IN A NON-DEVELOPMENT ENVIRONMENT.");
-		logger.info("^ For legal reasons this is a joke ~ Valoeghese");
+		if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
+			logger.info("I am become Databreaker, destroyer of loading times");
+		} else {
+			logger.warn("SUPERCODER79 IS COMPLETELY RESPONSIBLE FOR ANY DAMAGE CAUSED BY USING DATABREAKER IN A PRODUCTION ENVIRONMENT.");
+			logger.warn("THERE IS A GOOD CHANCE THAT YOUR GAME WILL BE PERFECT IF YOU LOAD UP A WORLD.");
+			logger.warn("PLEASE USE DATABREAKER IN A NON-DEVELOPMENT ENVIRONMENT.");
+			logger.warn("^ For legal reasons this is a joke ~ Valoeghese");
+		}
 	}
 }
